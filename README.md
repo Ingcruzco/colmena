@@ -1,19 +1,17 @@
-# Prueba técnica
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Descripción
+## Getting Started
 
-Prueba tencnica que consume el API https://jsonplaceholder.typicode.com/posts, para ver, editar, eliminar e insertar post. Se utilizó NextJS para desarrollarla y en el se pueden ver tecnicas de SSR, ContextAPI, CRUD Local Storage.
-
-Tenga encuenta que la version de NodeJS debe ser superior a 18.7.2
+First, run the development server:
 
 ```bash
-# clone el repositorio https://github.com/Ingcruzco/colmena.git
-git clone https://github.com/Ingcruzco/colmena.git
-cd colmena
-git checkout master
-npm install
 npm run dev
-# Abra la url http://localhost:3000 en la navegador
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
