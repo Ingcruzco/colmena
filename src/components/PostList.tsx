@@ -176,6 +176,7 @@ export default function PostList({ list }: Props) {
                     <td className="px-6 py-4 hidden md:table-cell">
                       <div className="flex flex-row justify-between">
                         <svg
+                          name="edit"
                           className=" cursor-pointer w-[16px] h-[16px] text-gray-800 dark:text-white"
                           onClick={() => updatePost(item)}
                           aria-hidden="true"
@@ -187,6 +188,7 @@ export default function PostList({ list }: Props) {
                           <path d="M13.243 3.2 7.359 9.081a.5.5 0 0 0-.136.256L6.51 12.9a.5.5 0 0 0 .59.59l3.566-.713a.5.5 0 0 0 .255-.136L16.8 6.757 13.243 3.2Z" />
                         </svg>
                         <svg
+                          name="delete"
                           onClick={() => deleteFromLocalStorage(item.id)}
                           className="cursor-pointer w-[16px] h-[16px] text-gray-800 dark:text-white"
                           aria-hidden="true"
