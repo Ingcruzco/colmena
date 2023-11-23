@@ -222,7 +222,7 @@ export default function PostList({ list }: Props) {
       </div>
       {!postFiltered.length && (
         <h2 className="w-full mx-auto text-center font-bold">
-          No se ha encontrado informacion
+          No se ha encontrado información
         </h2>
       )}
       <ModalList
