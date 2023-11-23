@@ -1,6 +1,5 @@
 import { useState, useContext, ReactNode } from "react";
 import PageContext from "./PageContext";
-import { Post } from "@/interfaces/post.interface";
 
 interface PageProviderProps {
   children: ReactNode;

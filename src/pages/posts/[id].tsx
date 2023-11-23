@@ -1,25 +1,16 @@
 import CardPost from "@/components/CardPost";
-import { Post } from "@/interfaces/post.interface";
-import { getLocalStorage, isInLocalStorage } from "@/utils";
-import { useEffect, useState } from "react";
-
-interface QueryParams {
-  query: {
-    id: number;
-  };
-}
-
-interface Props {
-  data: Post;
-  error: boolean;
-  image: string;
-}
+import { Props, QueryParams } from "@/interfaces/post.interface";
 
 export default function PostDetail({ data, error, image }: Props) {
   return (
     <main className="flex items-center justify-center h-screen w-screen bg-gray-300">
       {!error && <CardPost image={image} data={data} />}
-      {error && <h2>Esta pagina utiliza getServerSideProps, por este motivo solo muestra datos del API https://jsonplaceholder.typicode.com </h2>}
+      {error && (
+        <h2>
+          Esta pagina utiliza getServerSideProps, por este motivo solo muestra
+          datos del API https://jsonplaceholder.typicode.com{" "}
+        </h2>
+      )}
     </main>
   );
 }

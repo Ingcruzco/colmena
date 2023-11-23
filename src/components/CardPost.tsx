@@ -1,12 +1,7 @@
-import { Post } from "@/interfaces/post.interface";
+import { CardProps, Post } from "@/interfaces/post.interface";
 import { Button, Card } from "flowbite-react";
 import Image from "next/image";
 import { useRouter } from "next/router";
-
-interface CardProps {
-  image: string;
-  data: Post;
-}
 
 export default function CardPost({ image, data }: CardProps) {
   const router = useRouter();

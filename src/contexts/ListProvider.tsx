@@ -1,17 +1,13 @@
-import { useState, useContext, ReactNode, useEffect } from "react";
+import { useState, useContext, useEffect } from "react";
 import ListContext from "./ListContext";
-import { Post } from "@/interfaces/post.interface";
+import {
+  FormValues,
+  ListProviderProps,
+  Post,
+} from "@/interfaces/post.interface";
 import { usePage } from "./PageProvider";
 import { generateRandomNumber, getLocalStorage } from "@/utils";
 import Swal from "sweetalert2";
-
-interface ListProviderProps {
-  children: ReactNode;
-}
-
-interface FormValues {
-  [key: string]: string;
-}
 
 const URL_BASE = "https://jsonplaceholder.typicode.com/posts";
 

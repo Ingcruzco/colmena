@@ -1,9 +1,5 @@
-import { Post } from "@/interfaces/post.interface";
+import { FormValues } from "@/interfaces/post.interface";
 import { useState, ChangeEvent } from "react";
-
-interface FormValues {
-  [key: string]: string;
-}
 
 const useForm = (initialValues: FormValues) => {
   const [values, setValues] = useState<FormValues>(initialValues);
@@ -25,7 +21,7 @@ const useForm = (initialValues: FormValues) => {
   return {
     values,
     handleChange,
-    setInputValues
+    setInputValues,
   };
 };
 

@@ -1,9 +1,5 @@
+import { PageContextProps } from "@/interfaces/post.interface";
 import { createContext } from "react";
-
-interface PageContextProps {
-  currentPage: number;
-  updatePage: (page: number) => void;
-}
 
 const PageContext = createContext<PageContextProps | undefined>(undefined);
 
