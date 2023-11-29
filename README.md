@@ -23,3 +23,13 @@ npm run test
 ```
 
 se utilizó la técnica getServerSideProps para el SSR para cada detalle del Post, de modo que el detalle del Post se calcula del lado del servidor.
+
+### Docker despliegue
+en la raiz del proyecto ejecute los siguientes comandos:
+
+```bash
+# primero construya la imagen
+docker build -t prueba-colmena:1.0 .
+# ejecutela
+docker run -p 3000:3000 prueba-colmena:1.0
+```
